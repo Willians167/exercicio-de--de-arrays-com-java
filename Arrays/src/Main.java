@@ -3,13 +3,16 @@
 public class Main {
     public static void main(String[] args) {
 
-        int[] notas = {7, 4, 6, 8, 10};
+        double[] notas = {7,0,9.5, 8.6, 10};
 
-        int soma =0;
+        double soma =0;
         for (int i = 0; i < notas.length; i++) {
              soma += notas[i];
-           //  int media = soma / notas.length;
-            System.out.println(soma );
+
+            //System.out.println(soma );
         }
-    }
+
+        double media = soma/ notas.length;
+
+        System.out.printf("Média final: %.2f%n", media);    }
 }
